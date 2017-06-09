@@ -1,0 +1,95 @@
+.maze-view {
+  position: relative;
+  width: 100%;
+  padding-top: 300px;
+  background-color: #b7a3a3;
+}
+
+.maze-view .cell {
+  background-color: #000;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: opacity 3s;
+  opacity: 0;
+}
+
+.maze-view .cell[data-state='visited'] {
+  background-color: #000;
+  opacity: 1;
+}
+.maze-view .cell[data-state='visited']::before {
+  content: '';
+  background-color: #F00;
+  position: absolute;
+  border-radius: 50%;
+  width: 30%;
+  height: 30%;
+  left: 35%;
+  top: 35%;
+}
+
+.maze-view .cell[data-state] {
+  opacity: 1;
+}
+
+.maze-view .cell[data-state='player']::after {
+  content: '';
+  background-color: #FF0;
+  position: absolute;
+  border-radius: 50%;
+  width: 70%;
+  height: 70%;
+  left: 15%;
+  top: 15%;
+}
+
+.maze-view .cell[data-state='void'] {
+  background-color: #000;
+  position: absolute;
+}
+
+
+.maze-view .cell[data-state='void'][data-resistance]:after {  
+  content: '';
+  background-color: #F0F;
+  position: absolute;
+  border-radius: 50%;
+  width: 70%;
+  height: 70%;
+  left: 15%;
+  top: 15%;
+  opacity: 1;
+}
+
+.maze-view .cell[data-state='void'][data-resistance="0"]:after {  
+  opacity: 0;
+}
+.maze-view .cell[data-state='void'][data-resistance="1"]:after {  
+  opacity: 0.1;
+}
+.maze-view .cell[data-state='void'][data-resistance="2"]:after {  
+  opacity: 0.2;
+}
+.maze-view .cell[data-state='void'][data-resistance="3"]:after {  
+  opacity: 0.3;
+}
+.maze-view .cell[data-state='void'][data-resistance="4"]:after {  
+  opacity: 0.4;
+}
+.maze-view .cell[data-state='void'][data-resistance="5"]:after {  
+  opacity: 0.5;
+}
+.maze-view .cell[data-state='void'][data-resistance="6"]:after {  
+  opacity: 0.6;
+}
+.maze-view .cell[data-state='void'][data-resistance="7"]:after {  
+  opacity: 0.7;
+}
+.maze-view .cell[data-state='void'][data-resistance="8"]:after {  
+  opacity: 0.8;
+}
+.maze-view .cell[data-state='void'][data-resistance="9"]:after {  
+  opacity: 0.9;
+}

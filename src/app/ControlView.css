@@ -1,0 +1,24 @@
+.control-view {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 42px;
+}
+
+.control-view .control-item {
+  float: left;
+  margin-right: 12px;
+  padding: 4px;
+}
+
+.control-view .control-item .title {
+  text-transform: uppercase;
+  font-size: 0.9em;
+  color: #888;
+}
+
+.control-view .control-item .value {
+  font-weight: bold;
+  font-size: 1em;
+  color: #444;
+}

@@ -1,0 +1,26 @@
+.log-view {
+  position: relative;
+  width: 100%;
+  background-color: #eee;
+}
+
+.log-view .log-view-list {
+  margin: 0;
+  padding: 12px;
+}
+
+.log-view .log-view-list > li {
+  list-style: none;
+}
+.log-view > li > * {
+  display: inline-block;
+}
+
+.log-view .item-step {
+  width: 20px;
+  font-weight: bold;
+  color: #BBB;
+}
+
+.log-view .item-data {
+}

@@ -1,0 +1,62 @@
+.game-preview {
+  padding: 8px;
+  background-color: #EEE;
+  color: #888;
+  position: relative;
+  height: 34px;
+  cursor: pointer;
+}
+
+.game-preview > a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.game-preview > a > * {
+  display: inline-block;
+  padding: 4px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+
+}
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.game-preview .game-id {
+  left: 0;
+  width: 49%;
+  overflow: hidden;
+}
+.game-preview .game-state {
+  left: 50%;
+  width: 25%;
+}
+.game-preview .game-explored {
+  left: 75%;
+  width: 22%;
+}
+
+.game-preview[data-state="running"] {
+  background-color: #74e474;
+  color: #444;
+  
+}
+.game-preview[data-state="running"] .game-state {
+  color: #0f5024;
+}
+
+
+.game-preview .item-title {
+  padding-bottom: 4px;
+  font-size: 0.8em;
+}
+.game-preview .item-value {
+  font-weight: bold;
+  font-size: 1.15em;
+}
+
+
+

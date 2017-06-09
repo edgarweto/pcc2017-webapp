@@ -1,0 +1,8 @@
+{
+  "gameApi": {
+    "baseUrl": "http://localhost:8080",
+    "list": "/games",
+    "game": "/game"
+  },
+  "pollingDelay": 1500
+}

@@ -1,0 +1,26 @@
+.game-view {
+}
+
+.game-view .game-view-header {
+  background-color: #222;
+  padding: 4px;
+  color: white;
+  font-size: 0.9em;
+}
+
+.game-view .game-view-header > * {
+  display: inline-block;
+}
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.game-view .game-view-header .title {
+  margin-right: 4px;
+  color: #ccc;
+  width: 15%;
+}
+.game-view .game-view-header .game-id {
+  width: 80%;
+}
